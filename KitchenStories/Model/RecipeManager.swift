@@ -30,7 +30,9 @@ struct RecipeManager {
                     print(error!)
                 }
                 if let safeData = data {
-                    parseJSON(recipeData: safeData)
+                    if let imageString = self.parseJSON(recipeData: safeData) {
+                
+                    }
                     
                     
 //                let dataString = String(data: safeData, encoding: .utf8)
@@ -45,12 +47,22 @@ struct RecipeManager {
         
     }
     
-    func parseJSON(recipeData: Data){
+    func parseJSON(recipeData: Data) -> String? {
+        let decoder = JSONDecoder()
+        do {
+            let decodedData = try decoder.decode(RecipeData.self, from: recipeData)
+            
+            let imageURL = decodedData.hits[0].recipe.image
+            return imageURL
+        } catch {
+            print(error)
+            return nil
+        }
         
         
     }
     
-    
+
     
     
     

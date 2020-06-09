@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		521A7E920EE0223414B9BB11 /* Pods_KitchenStories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFD2C1D12411851F3F18F9E /* Pods_KitchenStories.framework */; };
+		848D1409248E3456005E4517 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D1408248E3456005E4517 /* RecipeData.swift */; };
 		D907692C248AE0E600AD04E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D907692B248AE0E600AD04E4 /* AppDelegate.swift */; };
 		D907692E248AE0E600AD04E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D907692D248AE0E600AD04E4 /* SceneDelegate.swift */; };
 		D9076930248AE0E600AD04E4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D907692F248AE0E600AD04E4 /* RegisterViewController.swift */; };
@@ -17,12 +18,13 @@
 		D9076940248AE18900AD04E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D907693F248AE18900AD04E4 /* LoginViewController.swift */; };
 		D9D688B1248AE9A4004CF17F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D688B0248AE9A4004CF17F /* WelcomeViewController.swift */; };
 		D9D688B3248AEA89004CF17F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9D688B2248AEA89004CF17F /* GoogleService-Info.plist */; };
-		D9D688B5248B6488004CF17F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D688B4248B6488004CF17F /* MainViewController.swift */; };
-		D9D688B8248C93B0004CF17F /* MainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D688B7248C93B0004CF17F /* MainManager.swift */; };
+		D9D688B5248B6488004CF17F /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D688B4248B6488004CF17F /* RecipeViewController.swift */; };
+		D9D688B8248C93B0004CF17F /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D688B7248C93B0004CF17F /* RecipeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D59E5D96822A1550143E4D3 /* Pods-KitchenStories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitchenStories.release.xcconfig"; path = "Target Support Files/Pods-KitchenStories/Pods-KitchenStories.release.xcconfig"; sourceTree = "<group>"; };
+		848D1408248E3456005E4517 /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
 		D3712DFF46401672A6D07755 /* Pods-KitchenStories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitchenStories.debug.xcconfig"; path = "Target Support Files/Pods-KitchenStories/Pods-KitchenStories.debug.xcconfig"; sourceTree = "<group>"; };
 		D9076928248AE0E600AD04E4 /* KitchenStories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitchenStories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D907692B248AE0E600AD04E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,8 +37,8 @@
 		D907693F248AE18900AD04E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D9D688B0248AE9A4004CF17F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = KitchenStories/Views/WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		D9D688B2248AEA89004CF17F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D9D688B4248B6488004CF17F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		D9D688B7248C93B0004CF17F /* MainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainManager.swift; sourceTree = "<group>"; };
+		D9D688B4248B6488004CF17F /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		D9D688B7248C93B0004CF17F /* RecipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
 		FBFD2C1D12411851F3F18F9E /* Pods_KitchenStories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KitchenStories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,7 +111,7 @@
 				D9D688B0248AE9A4004CF17F /* WelcomeViewController.swift */,
 				D907692F248AE0E600AD04E4 /* RegisterViewController.swift */,
 				D907693F248AE18900AD04E4 /* LoginViewController.swift */,
-				D9D688B4248B6488004CF17F /* MainViewController.swift */,
+				D9D688B4248B6488004CF17F /* RecipeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -125,7 +127,8 @@
 		D9D688B6248C9394004CF17F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D9D688B7248C93B0004CF17F /* MainManager.swift */,
+				D9D688B7248C93B0004CF17F /* RecipeManager.swift */,
+				848D1408248E3456005E4517 /* RecipeData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,9 +251,10 @@
 			files = (
 				D9076940248AE18900AD04E4 /* LoginViewController.swift in Sources */,
 				D9D688B1248AE9A4004CF17F /* WelcomeViewController.swift in Sources */,
-				D9D688B8248C93B0004CF17F /* MainManager.swift in Sources */,
+				D9D688B8248C93B0004CF17F /* RecipeManager.swift in Sources */,
 				D9076930248AE0E600AD04E4 /* RegisterViewController.swift in Sources */,
-				D9D688B5248B6488004CF17F /* MainViewController.swift in Sources */,
+				D9D688B5248B6488004CF17F /* RecipeViewController.swift in Sources */,
+				848D1409248E3456005E4517 /* RecipeData.swift in Sources */,
 				D907692C248AE0E600AD04E4 /* AppDelegate.swift in Sources */,
 				D907692E248AE0E600AD04E4 /* SceneDelegate.swift in Sources */,
 			);

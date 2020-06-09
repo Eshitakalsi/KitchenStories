@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class MainViewController: UIViewController, UITextFieldDelegate {
+class RecipeViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var recipeName: UILabel!
     @IBOutlet weak var recipeImage: UIImageView!
@@ -25,7 +25,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    var mainManager = MainManager()
+    var recipeManager = RecipeManager()
 
     @IBOutlet weak var searchTextField: UITextField!
     
@@ -65,7 +65,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         
         if let recipe = searchTextField.text {
-            mainManager.fetchRecipe(recipeName: recipe)
+            recipeManager.fetchRecipe(recipeName: recipe)
             
         }
         
@@ -94,5 +94,11 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }
+    }
+}
+
+extension UIImageView {
+    func load(urlString:URL) {
+        
     }
 }
